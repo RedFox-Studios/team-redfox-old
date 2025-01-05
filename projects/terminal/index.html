@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Terminal</title>
+  <link rel="icon" href="wolf.ico">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="terminal">
+    <div class="output"></div>
+    <div class="input">
+      <span class="prefix">$</span>
+      <input type="text" autofocus>
+    </div>
+  </div>
+  <script src="script.js"></script>
+  <audio id="tick-sound" src="click.mp3"></audio>
+
+<script>
+  window.addEventListener("keydown", function(event) {
+    // Check if any key is pressed
+    if (event.keyCode) {
+      // Get the audio element
+      var audio = document.getElementById("tick-sound");
+      // Play the audio file
+      audio.currentTime = 0;
+      audio.play();
+      audio.volume = 0.3; // Set volume to 30%
+    }
+  });
+</script>
+
+<audio id="error" src="error.mp3"></audio>
+
+<script>
+  window.addEventListener("keydown", function(event) {
+    if (event.keyCode === 13) {
+      var audio = document.getElementById("error");
+      audio.currentTime = 0;
+      audio.play();
+      var audio = document.getElementById("error");
+      audio.volume = 0.3; // Set volume to 30%
+    }
+  });
+</script>
+
+<h3 class="text">Press numpadmult '*' to play chill vibe music!</h3>
+  <h2 class="text">Support Development Here</h2>
+  <script src="audio.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+  <a class="my-button" href="https://www.youtube.com/@Pilot2254_official" target="_blank">YouTube</a>
+  <a class="my-button" href="https://www.patreon.com/Pilot2254" target="_blank">Patreon</a>
+  <a class="notallow" href="">get.admin</a>
+</body>
+</html>
+
+
+
+
+<!-- example note on line 60 -->

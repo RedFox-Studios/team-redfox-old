@@ -1,0 +1,73 @@
+body {
+    background-color: #00122d;
+  }
+  
+  #terminal {
+    background-color: #00122d;
+    font-family: 'Source Code Pro', monospace;
+    color: #00a6f8; /* changed font color to #00a6f8 */
+    font-family: monospace;
+    height: 80vh;
+    padding: 10px;
+  }
+  
+  .output {
+    height: calc(100% - 40px);
+    overflow-y: scroll;
+  }
+  
+  .input {
+    display: flex;
+    align-items: center;
+    height: 30px;
+  }
+  
+  .prefix {
+    color: #00ff00;
+    margin-right: 5px;
+  }
+  
+  input {
+    background-color: transparent;
+    border: none;
+    color: #00a6f8; /* changed input font color to #00a6f8 */
+    font-family: 'Source Code Pro', monospace;
+    font-family: monospace;
+    font-size: 1em;
+    outline: none;
+    width: 100%;
+  }
+  .my-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: 1px solid rgb(0, 0, 0);
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 0 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 0.2s ease-in-out;
+    font-family: 'Source Code Pro', monospace;
+  }
+  
+  .my-button:hover {
+    transform: scale(1.2);
+    background-color: #3e8e41;
+    transform:translate(5px, 2.5px);
+    cursor: crosshair;
+  }
+
+  .text{   /* NOT USED AS BUTTON */
+    color: #00a6f8;
+    font-family: 'Source Code Pro', monospace;
+  }
+
+  .audio{
+    background-color: #00a6f8;
+  }
+
+  
+  
